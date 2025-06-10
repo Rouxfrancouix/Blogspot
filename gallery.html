@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PR Blog Spot - Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>PR<span>BlogSpot</span></h1>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-page">
+        <h1 class="page-title">Our Gallery</h1>
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="events">Events</button>
+            <button class="filter-btn" data-filter="conferences">Conferences</button>
+            <button class="filter-btn" data-filter="workshops">Workshops</button>
+            <button class="filter-btn" data-filter="team">Team</button>
+        </div>
+        <div class="gallery-grid">
+            <!-- Event Images -->
+            <div class="gallery-item" data-category="events">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="PR Event 1">
+                <div class="gallery-caption">
+                    <h3>Annual PR Summit 2024</h3>
+                    <p>March 15, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="events">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="PR Event 2">
+                <div class="gallery-caption">
+                    <h3>Media Relations Workshop</h3>
+                    <p>February 28, 2024</p>
+                </div>
+            </div>
+            <!-- Add more event images -->
+
+            <!-- Conference Images -->
+            <div class="gallery-item" data-category="conferences">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="Conference 1">
+                <div class="gallery-caption">
+                    <h3>Digital PR Conference</h3>
+                    <p>January 20, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="conferences">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="Conference 2">
+                <div class="gallery-caption">
+                    <h3>Global PR Summit</h3>
+                    <p>December 15, 2023</p>
+                </div>
+            </div>
+            <!-- Add more conference images -->
+
+            <!-- Workshop Images -->
+            <div class="gallery-item" data-category="workshops">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="Workshop 1">
+                <div class="gallery-caption">
+                    <h3>Social Media Strategy Workshop</h3>
+                    <p>November 30, 2023</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="workshops">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="Workshop 2">
+                <div class="gallery-caption">
+                    <h3>Content Creation Workshop</h3>
+                    <p>October 25, 2023</p>
+                </div>
+            </div>
+            <!-- Add more workshop images -->
+
+            <!-- Team Images -->
+            <div class="gallery-item" data-category="team">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="Team 1">
+                <div class="gallery-caption">
+                    <h3>Team Building Event</h3>
+                    <p>September 15, 2023</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="team">
+                <img src="Our Gallery Section Images/IMG 7.jpg" alt="Team 2">
+                <div class="gallery-caption">
+                    <h3>Annual Team Retreat</h3>
+                    <p>August 20, 2023</p>
+                </div>
+            </div>
+            <!-- Add more team images -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About PR BlogSpot</h3>
+                <p>Your trusted source for public relations insights, trends, and expert opinions.</p>
+                <div class="contact">
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prblogspot.com</p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PR BlogSpot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html> 

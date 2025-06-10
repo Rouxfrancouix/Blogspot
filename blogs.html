@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs - PR BlogSpot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .blogs-section { padding: 3rem 0; background: #f8f9fa; }
+        .blogs-title { text-align: center; font-size: 2.5rem; margin-bottom: 2rem; color: #222; }
+        .blogs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; max-width: 1400px; margin: 0 auto; }
+        .blog-card { background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s; }
+        .blog-card:hover { transform: translateY(-6px) scale(1.02); }
+        .blog-card img { width: 100%; height: 200px; object-fit: cover; }
+        .blog-card-content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+        .blog-card-title { font-size: 1.3rem; font-weight: 700; color: #222; margin-bottom: 0.7rem; }
+        .blog-card-date { font-size: 0.93rem; color: #555; margin-bottom: 1rem; }
+        .blog-card-summary { color: #555; margin-bottom: 1rem; flex: 1; }
+        .blog-card-writer { font-size: 0.97rem; color: #007bff; margin-bottom: 0.2rem; }
+        .blog-card-email { font-size: 0.93rem; color: #555; margin-bottom: 1rem; }
+        .blog-card-link { align-self: flex-start; background: #007bff; color: #fff; padding: 0.5rem 1.2rem; border-radius: 5px; text-decoration: none; font-weight: 500; transition: background 0.2s; }
+        .blog-card-link:hover { background: #0056b3; }
+        @media (max-width: 600px) { .blogs-title { font-size: 2rem; } .blog-card img { height: 150px; } }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">
+            <h1>PR<span>BlogSpot</span></h1>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Index.html#writers">Writers</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <!-- Blogs Section -->
+    <main class="blogs-section">
+        <h1 class="section-title">Latest Articles</h1>
+        
+        <div class="blogs-grid">
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 1.jpg" alt="Digital PR">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">The Future of Digital PR</div>
+                    <div class="blog-card-date">June 10, 2025</div>
+                    <div class="blog-card-summary">Explore the latest trends and innovations shaping digital public relations in 2024 and beyond.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Jit Paul</a></div>
+                    <div class="blog-card-email">jit.paul@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/digital-pr-2024.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Blog Images/Boutique img.jpg" alt="Social Media Strategy">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Draped in Elegance, Wrapped in Responsibility:</div>
+                    <div class="blog-card-date">June 10, 2025</div>
+                    <div class="blog-card-summary">Our 
+                        Commitment to Eco-Friendly Saree Packaging From
+                         Sayani’s Boutique House
+                        </div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Sayani Saha</a></div>
+                    <div class="blog-card-email">sayanisaha@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/social-media-strategy.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 3.jpg" alt="Crisis Communication">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Effective Crisis Communication Strategies</div>
+                    <div class="blog-card-date">March 13, 2024</div>
+                    <div class="blog-card-summary">Discover essential strategies for managing and communicating during crisis situations.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Emma Davis</a></div>
+                    <div class="blog-card-email">emma.davis@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/crisis-communication.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 1.jpg" alt="Media Relations">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Modern Media Relations: Building Strong Press Relationships</div>
+                    <div class="blog-card-date">March 12, 2024</div>
+                    <div class="blog-card-summary">Learn how to build and maintain effective relationships with media professionals.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">David Wilson</a></div>
+                    <div class="blog-card-email">david.wilson@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/media-relations.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 2.jpg" alt="Brand Communication">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Strategic Brand Communication in the Digital Age</div>
+                    <div class="blog-card-date">March 11, 2024</div>
+                    <div class="blog-card-summary">Explore effective strategies for brand communication in today's digital landscape.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Lisa Anderson</a></div>
+                    <div class="blog-card-email">lisa.anderson@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/brand-communication.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 3.jpg" alt="Content Strategy">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Creating an Effective Content Strategy for PR Success</div>
+                    <div class="blog-card-date">March 10, 2024</div>
+                    <div class="blog-card-summary">Learn how to develop and implement a successful content strategy for your PR campaigns.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Emma Davis</a></div>
+                    <div class="blog-card-email">emma.davis@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/content-strategy.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 1.jpg" alt="Event PR">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Mastering Event PR: From Planning to Post-Event Coverage</div>
+                    <div class="blog-card-date">March 9, 2024</div>
+                    <div class="blog-card-summary">Discover comprehensive strategies for successful event PR and promotion.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Michael Chen</a></div>
+                    <div class="blog-card-email">michael.chen@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/event-pr.html">Read More</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="Image Gallery Home Page/Image 2.jpg" alt="PR Measurement">
+                <div class="blog-card-content">
+                    <div class="blog-card-title">Measuring PR Success: Beyond Media Coverage</div>
+                    <div class="blog-card-date">March 8, 2024</div>
+                    <div class="blog-card-summary">Learn how to effectively measure and demonstrate the impact of your PR efforts.</div>
+                    <div class="blog-card-writer"><a href="#" style="color:#007bff;text-decoration:none;">Sarah Johnson</a></div>
+                    <div class="blog-card-email">sarah.johnson@email.com</div>
+                    <a class="blog-card-link" href="blog-posts/pr-measurement.html">Read More</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About PR BlogSpot</h3>
+                <p>Your trusted source for public relations insights, trends, and expert opinions.</p>
+                <div class="contact">
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prblogspot.com</p>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Homepage.html#writers">Writers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PR BlogSpot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
